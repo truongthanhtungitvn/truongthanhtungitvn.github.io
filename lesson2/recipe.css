@@ -48,6 +48,14 @@ ul li {
 	list-style-image: url(images/pie_bullet.png);
 }
 
+.li {
+	list-style-image: url(images/pie_bullet.png);
+}
+
+#list-item {
+	padding-left: 20px;
+}
+
 .subject {
 	font-weight: bold;
 }
