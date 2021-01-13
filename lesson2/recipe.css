@@ -44,7 +44,7 @@ blockquote {
 	font-style: italic;
 }
 
-li {
+ul li {
 	list-style-image: url(images/pie_bullet.png);
 }
 
