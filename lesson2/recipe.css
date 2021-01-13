@@ -1,81 +1,83 @@
 body {
-    background-repeat: repeat-x repeat-y;
-    color: #404040;
-    font-size: 11pt;
-    font-family: Georgia, Garamond, serif;
-    padding: 30px;
+	background-image: url("images/silverware.jpg");
+	background-repeat: repeat-x repeat-y;
+	color: #404040;
+	font-size: 11pt;
+	font-family: Georgia, Garamond, serif;
+	padding: 30px;
 }
 
 a {
-    color: #A4A400;
+	color: #A4A400;
 }
 
 h2 {
-    color: #A4A400;
-    background-color: #F0F0F0;
-    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
-    font-size: 22pt;
-    font-weight: lighter;
-    text-decoration: underline;
-    text-align: center;
+	color: #A4A400;
+	background-color: #F0F0F0;
+	font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	font-size: 22pt;
+	font-weight: lighter;
+	text-decoration: underline;
+	text-align: center;
 }
 
 h2.sub {
-    font-size: 18pt;    
-    text-align: left;
+	font-size: 18pt;
+	text-align: left;
 }
 
 .tooltip {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 p.validation-div {
-    display: inline;    
+	display: inline;
 }
 
 ul.simple-list {
-    list-style-type: none;
-    padding-left: 0px;
+	list-style-type: none;
+	padding-left: 0px;
 }
 
 blockquote {
-    background-color: #FFFFA8;
-    font-style: italic;    
+	background-color: #FFFFA8;
+	font-style: italic;
+}
+
+li {
+	list-style-image: url(images/pie_bullet.png);
 }
 
 .subject {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .predecate {
-    text-decoration: line-through;    
+	text-decoration: line-through;
 }
 
-.copy-right {    
-    font-style: italic;    
-    font-size: 0.8em;        
+.copy-right {
+	font-style: italic;
+	font-size: 0.8em;
 }
 
-#content{
-    max-width: 780px;
-    margin: 0 auto;
+#content {
+	max-width: 780px;
+	margin: 0 auto;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+	visibility: hidden;
+	width: 120px;
+	background-color: #404040;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
