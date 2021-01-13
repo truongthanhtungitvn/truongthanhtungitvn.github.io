@@ -1,10 +1,9 @@
 body {
-    background-image: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg');
     background-repeat: repeat-x repeat-y;
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, serif;
-
+    padding: 30px;
 }
 
 a {
@@ -16,6 +15,7 @@ h2 {
     background-color: #F0F0F0;
     font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     font-size: 22pt;
+    font-weight: lighter;
     text-decoration: underline;
     text-align: center;
 }
@@ -23,6 +23,10 @@ h2 {
 h2.sub {
     font-size: 18pt;    
     text-align: left;
+}
+
+.tooltip {
+    text-decoration: underline;
 }
 
 p.validation-div {
@@ -51,3 +55,27 @@ blockquote {
     font-style: italic;    
     font-size: 0.8em;        
 }
+
+#content{
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
