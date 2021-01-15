@@ -17,7 +17,8 @@ a:link {
     border: 4px thick #A8F0F0;
     border-radius: 15px;
     background-color: #A8F0F0;    
-    text-align: right;        
+    text-align: right; 
+    padding: 5px;       
 }
 
 #header h1 {
@@ -33,6 +34,7 @@ a:link {
     float: left;
     width: 100px;
     overflow: auto;
+    margin-top: 16px;
 }
 
 nav {        
@@ -57,19 +59,15 @@ h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
-
 .section {           
     margin-top: 1em;
     margin-bottom: 1em;    
     overflow: auto;
-
     margin-left: 110px;
     border: 5px solid #83dfdf;
     border-radius: 15px;
     background-color: #c1f1f1;
-
-    padding: 5px;
+    padding: 11px;
 }
 
 .date-style {
@@ -89,14 +87,3 @@ h2 {
 .validation-div {
     display: inline;
 }
-
-.validation-div img {
-    width: 100px;
-    height: 50px;
-}
-
-
-
-
-
-
