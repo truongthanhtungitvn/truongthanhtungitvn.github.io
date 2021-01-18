@@ -24,7 +24,7 @@ function renderValidate(relPath, limit = 2) {
     for(let i = 0 ; i < validateArr.length ; i++) {
         if(i <= limit) {
             content += `<a href="${validateArr[i].href}${currentUrl}" target="_blank">
-            <img src="${relPath}\${validateArr[i].img}" alt="${validateArr[i].alt}"></a><br/>`;
+            <img src="${relPath}/${validateArr[i].img}" alt="${validateArr[i].alt}"></a><br/>`;
         }
     }
     return content;
