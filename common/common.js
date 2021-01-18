@@ -10,23 +10,24 @@ let validateArr = [
         img : "w3c-css.png",
         alt: "CSS validator"
     },
-
-    {
-        href : "http://jigsaw.w3.org/css-validator/validator?uri=",
-        img : "w3c-css.png",
-        alt: "CSS validator"
-    },
 ]
 
-function renderValidate(relPath, limit = 2) {
+function renderValidate() {
     let currentUrl = window.location.href;
     let content = "";
+
+    let path = window.location.pathname;
+    let pathArr = path.split("/");
+
+    let rootPath = './';
+    for(let i = 0; i < pathArr.length - 2 ; i++) {
+        rootPath +="../";
+    }
+    
     for(let i = 0 ; i < validateArr.length ; i++) {
-        if(i <= limit) {
-            let imgSrc = relPath + '/' + validateArr[i].img;
+        let imgSrc = rootPath + '/' + validateArr[i].img;
             content += `<a href="${validateArr[i].href}${currentUrl}" target="_blank">
             <img src="${imgSrc}" alt="${validateArr[i].alt}"></a><br/>`;
-        }
     }
     return content;
 }
