@@ -23,9 +23,9 @@ function renderValidate() {
     for(let i = 0; i < pathArr.length - 2 ; i++) {
         rootPath +="../";
     }
-    
+
     for(let i = 0 ; i < validateArr.length ; i++) {
-        let imgSrc = rootPath + '/' + validateArr[i].img;
+        let imgSrc = rootPath + 'common/' + validateArr[i].img;
             content += `<a href="${validateArr[i].href}${currentUrl}" target="_blank">
             <img src="${imgSrc}" alt="${validateArr[i].alt}"></a><br/>`;
     }
