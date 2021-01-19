@@ -63,7 +63,6 @@ function handleSizeChange(){
     textarea.style.fontSize = sizeSelection.value;
 }
 
-
 function resetTextArea(){
     textarea.value = ANIMATIONS[animationValue];
 }
