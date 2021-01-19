@@ -33,5 +33,5 @@ fieldset {
 
 #validation{
     text-align :end;
-    display: grid;
+    display: block;
 }
