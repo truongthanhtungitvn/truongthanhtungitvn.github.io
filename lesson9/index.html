@@ -85,7 +85,7 @@
              <h1>Exercise: Parsing JSON and Ajax</h1>
             <div class="form-item">
                 <label for="name">User ID:</label>
-                <input type="text" name="uid" id="uid" autofocus/>
+                <input type="text" name="uid" id="uid" autofocus pattern="\d"/>
             </div>
 
             <div class="form-item">
@@ -112,6 +112,9 @@
             btn.onclick = clickhandler;
 
             function clickhandler(e) {
+                // console.log(parseInt(uid.value) );
+                if(uid.value == "" || isNaN(uid.value)) return false;
+                
                 fetch(enpoint + "/users/" + uid.value)
                     .then(response => response.json())
                     .then(data => {
