@@ -114,6 +114,10 @@
             function clickhandler(e) {
                 // console.log(parseInt(uid.value) );
                 if(uid.value == "" || isNaN(uid.value)) return false;
+
+                if(uid.value > 10) {
+                    alert("user id must from 1 - 10"); return false;
+                }
                 
                 fetch(enpoint + "/users/" + uid.value)
                     .then(response => response.json())
